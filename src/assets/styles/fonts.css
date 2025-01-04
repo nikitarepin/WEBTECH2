@@ -46,3 +46,24 @@
   font-weight: 200;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "SFPText";
+  src: local("SFPText"), local("SFPText-SemiBold"), local("SFPText SemiBold"),
+    url("/static/fonts/SFProText-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SFPText";
+  src: local("SFPText"), local("SFPText-Medium"), local("SFPText Medium"),
+    url("/static/fonts/SFProText-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SFPText";
+  src: local("SFPText"), local("SFPText-Regular"), local("SFPText Regular"),
+    url("/static/fonts/SFProText-Regular.ttf") format("truetype");
+  font-weight: 400;
+}

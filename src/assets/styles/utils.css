@@ -28,3 +28,18 @@
   font-weight: 200;
   font-style: italic;
 }
+
+.semibold-sfp {
+  font-family: "SFPText", sans-serif;
+  font-weight: 600;
+}
+
+.medium-sfp {
+  font-family: "SFPText", sans-serif;
+  font-weight: 500;
+}
+
+.regular-sfp {
+  font-family: "SFPText", sans-serif;
+  font-weight: 400;
+}
