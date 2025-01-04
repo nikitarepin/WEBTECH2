@@ -1,9 +1,30 @@
 .bold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 .medium {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.light {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+.light-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: italic;
 }
