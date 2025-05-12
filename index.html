@@ -3,56 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ЛБ12</title>
+    <title>ЛБ13</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
 
   <body>
-    <label for="type">Вид пиццы:</label>
-    <select id="type">
-      <option value="margarita">Маргарита</option>
-      <option value="peperoni">Пепперони</option>
-      <option value="bavarskaya">Баварская</option>
-    </select>
-    <br />
-    <br />
+    <section class="pizza_select">
+      <article class="pizza_types">
+        <div class="pizza_option selected-type" data-value="margarita">
+          <img class="pizza_image" src="src/images/маргарита.png" />
+          <p class="pizza_name">Маргарита</p>
+        </div>
+        <div class="pizza_option" data-value="peperoni">
+          <img class="pizza_image" src="src/images/пепперони.png" />
+          <p class="pizza_name">Пепперони</p>
+        </div>
+        <div class="pizza_option" data-value="bavarskaya">
+          <img class="pizza_image" src="src/images/баварская.png" />
+          <p class="pizza_name">Баварская</p>
+        </div>
+      </article>
 
-    <label for="size">Размер:</label>
-    <select id="size">
-      <option value="big">Большая</option>
-      <option value="small">Маленькая</option>
-    </select>
-    <br />
-    <br />
+      <article class="pizza_column">
+        <div class="pizza_sizes">
+          <h2 class="size_label">Выберите размер</h2>
+          <div id="size">
+            <div data-value="small" class="size_option selected-size">
+              <p class="size_name">Маленькая</p>
+            </div>
+            <div data-value="big" class="size_option">
+              <p class="size_name">Большая</p>
+            </div>
+          </div>
+        </div>
 
-    <fieldset>
-      <legend>Добавки:</legend>
-      <input
-        type="checkbox"
-        id="mozarella"
-        value="mozarella"
-        class="topping"
-      /><label for="mozarella">Сливочная моцарелла</label>
-      <br />
-      <input
-        type="checkbox"
-        id="cheeseBoard"
-        value="cheeseBoard"
-        class="topping"
-      /><label for="cheeseBoard">Сырный борт</label>
-      <br />
-      <input
-        type="checkbox"
-        id="moreCheese"
-        value="moreCheese"
-        class="topping"
-      /><label for="moreCheese">Чедер и пармезан</label>
-    </fieldset>
-    <br />
+        <div class="pizza_toppings">
+          <h2 class="size_label">Добавить по вкусу</h2>
+          <div class="topping_set">
+            <div class="topping_option" data-value="cheeseBoard">
+              <img class="topping_image" src="src/images/сырный_борт.png" />
+              <p class="topping_name">Сырный бортик</p>
+              <p class="topping_price"></p>
+            </div>
+            <div class="topping_option" data-value="mozarella">
+              <img class="topping_image" src="src/images/моцарелла.png" />
+              <p class="topping_name">Сливочная моцарелла</p>
+              <p class="topping_price"></p>
+            </div>
+            <div class="topping_option" data-value="moreCheese">
+              <img
+                class="topping_image"
+                src="src/images/чеддер_и_пармезан.png"
+              />
+              <p class="topping_name">Чедер и пармезан</p>
+              <p class="topping_price"></p>
+            </div>
+          </div>
+        </div>
 
-    <button onclick="calculate()">Рассчитать</button>
-    <p id="price"></p>
-    <p id="calories"></p>
-
+        <button onclick="calculate()" id="result">
+          Добавить в корзину за 0₽ (0 кКал)
+        </button>
+      </article>
+    </section>
     <script src="src/index.js"></script>
   </body>
 </html>
