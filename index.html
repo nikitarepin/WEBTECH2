@@ -1,1 +1,58 @@
-hello world from Nikita
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛБ12</title>
+  </head>
+
+  <body>
+    <label for="type">Вид пиццы:</label>
+    <select id="type">
+      <option value="margarita">Маргарита</option>
+      <option value="peperoni">Пепперони</option>
+      <option value="bavarskaya">Баварская</option>
+    </select>
+    <br />
+    <br />
+
+    <label for="size">Размер:</label>
+    <select id="size">
+      <option value="big">Большая</option>
+      <option value="small">Маленькая</option>
+    </select>
+    <br />
+    <br />
+
+    <fieldset>
+      <legend>Добавки:</legend>
+      <input
+        type="checkbox"
+        id="mozarella"
+        value="mozarella"
+        class="topping"
+      /><label for="mozarella">Сливочная моцарелла</label>
+      <br />
+      <input
+        type="checkbox"
+        id="cheeseBoard"
+        value="cheeseBoard"
+        class="topping"
+      /><label for="cheeseBoard">Сырный борт</label>
+      <br />
+      <input
+        type="checkbox"
+        id="moreCheese"
+        value="moreCheese"
+        class="topping"
+      /><label for="moreCheese">Чедер и пармезан</label>
+    </fieldset>
+    <br />
+
+    <button onclick="calculate()">Рассчитать</button>
+    <p id="price"></p>
+    <p id="calories"></p>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
