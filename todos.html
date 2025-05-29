@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Список дел</title>
+    <link rel="stylesheet" href="./src/assets/styles/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/index.html">Главная</a>
+        <a href="/reg.html">Личный кабинет</a>
+        <a href="/logout.html">Выйти</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          class="todo-input"
+          placeholder="Введите название"
+        />
+        <button id="todo-submit" type="submit">Добавить в список дел</button>
+      </div>
+
+      <ul id="todo-list" class="todo-list"></ul>
+    </main>
+
+    <div class="loader-wrapper" data-loading>
+      <img src="./src/assets/icons/loader.svg" alt="" class="loader" />
+    </div>
+
+    <script src="src/pages/todos.js" type="module"></script>
+    <script src="src/services/todos.js" type="module"></script>
+  </body>
+</html>

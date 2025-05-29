@@ -1,0 +1,9 @@
+button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(173, 215, 252);
+}
+
+button:hover {
+  background-color: rgb(103, 164, 217);
+}
